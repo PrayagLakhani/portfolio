@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayag Lakhani-Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --text-color: #333;
+            --background-color: #ecf0f1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 80px auto 0;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h1,
+        h2 {
+            color: var(--secondary-color);
+            margin-bottom: 0rem;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text {
+            flex: 1;
+            padding-right: 2rem;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 1rem;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .contact-button {
+            display: flex;
+            align-items: center;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #2980b9;
+        }
+
+        .contact-button i {
+            margin-right: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        footer {
+            background: #2980b9;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p style="font-family: kanit; font-size: 42px; color: #333;">Prayag Lakhani</p>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Hi, I am Prayag Lakhani</h1>
+                <p>I'm a student at IIT Indore with a passion for web development, where I combine my keen eye for
+                    design with my focus on creating intuitive, user-friendly interfaces. Currently, I'm working on
+                    mastering Data Science and Algorithms.</p>
+            </div>
+            <div class="hero-image">
+                <img style="width: 450px; height: 600px;" src="IMG_7025.jpg" alt="Prayag Lakhani">
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-item">HTML5</span>
+                <span class="skill-item">CSS3</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">C++</span>
+                <span class="skill-item">Outreach</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <img src="WhatsApp Image 2024-10-13 at 21.16.46_40a4225b.jpg" alt="Project 1" class="project-image">
+                    <div class="project-info">
+                        <h3>Human Detection Robot</h3>
+                        <p>A Line Follower Robot with Human Detection is an enhanced autonomous robot that not only
+                            follows a predefined path (such as a black line) using sensors but also incorporates human
+                            detection functionality.</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images.jpeg" alt="Project 2" class="project-image">
+                    <div class="project-info">
+                        <h3>OCR Handwriting Detection</h3>
+                        <p>This project involves developing a system that can recognize and interpret handwritten text
+                            from images or scanned documents. OCR (Optical Character Recognition) technology converts
+                            the handwritten content into machine-readable text.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-buttons">
+                <a href="https://www.linkedin.com/in/prayag-lakhani-58ab43289/" class="contact-button" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/PrayagLakhani" class="contact-button" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="mailto:prayaglakhaniofficial@gmail.com" class="contact-button">
+                    <i class="fas fa-envelope"></i> Gmail
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2024 Prayag Lakhani. All Rights Reserved.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
